@@ -7,6 +7,7 @@ import { FormBuilder } from '@angular/forms';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
+
 export class CartComponent implements OnInit {
   items;
   checkoutForm;
@@ -27,7 +28,7 @@ export class CartComponent implements OnInit {
 
   onSubmit(customerData) {
     this.items = this.cartService.clearCart();
-    this.checkutForm.reset();
+    this.checkoutForm.reset();
 
     console.warn('Your order has been submitted', customerData);
   }
