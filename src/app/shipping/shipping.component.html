@@ -1,8 +1,9 @@
 <h3>Shipping prices</h3>
-<p>
-  <button backButton>Back</button>
-</p>
+
 <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
   <span> {{ shipping.type }} </span>
   <span> {{ shipping.price | currency:'JPY' }} </span>
-</div>  
+</div>
+<p>
+  <button backButton>Back</button>
+</p>  
