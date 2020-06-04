@@ -13,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { BackButtonDirective } from './back-button.directive';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    BackButtonDirective
   ],
   bootstrap: [ AppComponent ],
   providers: [ CartService ]
